@@ -1,0 +1,47 @@
+@import 'tailwindcss';
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-border: var(--border);
+  --color-ring: var(--ring);
+}
+
+:root {
+  --background: oklch(0.98 0.02 92);
+  --foreground: oklch(0.18 0.04 64);
+  --card: oklch(1 0 0 / 88%);
+  --card-foreground: oklch(0.18 0.04 64);
+  --primary: oklch(0.54 0.17 32);
+  --primary-foreground: oklch(0.98 0.02 92);
+  --secondary: oklch(0.91 0.05 83);
+  --secondary-foreground: oklch(0.27 0.06 61);
+  --muted: oklch(0.93 0.03 88);
+  --muted-foreground: oklch(0.47 0.04 65);
+  --accent: oklch(0.86 0.11 142);
+  --accent-foreground: oklch(0.2 0.05 146);
+  --border: oklch(0.84 0.04 78);
+  --ring: oklch(0.62 0.18 35);
+}
+
+* {
+  border-color: var(--border);
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, oklch(0.86 0.11 142 / 28%), transparent 34rem),
+    linear-gradient(135deg, oklch(0.98 0.02 92), oklch(0.94 0.04 78));
+  color: var(--foreground);
+}
