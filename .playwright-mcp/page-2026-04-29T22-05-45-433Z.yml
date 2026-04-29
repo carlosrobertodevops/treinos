@@ -1,0 +1,51 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - img [ref=e6]
+      - heading "FIT.AI" [level=1] [ref=e8]
+      - generic [ref=e9]:
+        - generic [ref=e10]:
+          - heading "Olá, Atleta" [level=2] [ref=e11]
+          - paragraph [ref=e12]: Bora treinar hoje?
+        - link "Ver Planos" [ref=e13] [cursor=pointer]:
+          - /url: /workout-plans
+          - button "Ver Planos" [ref=e14]
+    - main [ref=e15]:
+      - generic [ref=e16]:
+        - generic [ref=e17]:
+          - heading "Consistência" [level=3] [ref=e18]
+          - link "Ver histórico" [ref=e19] [cursor=pointer]:
+            - /url: /evolution
+        - generic [ref=e20]:
+          - generic [ref=e22]: Nenhum plano ativo.
+          - generic [ref=e23]:
+            - img [ref=e24]
+            - generic [ref=e26]: "0"
+      - generic [ref=e27]:
+        - generic [ref=e28]:
+          - heading "Treino de Hoje" [level=3] [ref=e29]
+          - link "Ver treinos" [ref=e30] [cursor=pointer]:
+            - /url: /workout-plans
+        - generic [ref=e31]:
+          - paragraph [ref=e32]: Nenhum treino programado hoje.
+          - link "Criar um plano" [ref=e33] [cursor=pointer]:
+            - /url: /workout-plans
+    - navigation [ref=e34]:
+      - link "Home" [ref=e35] [cursor=pointer]:
+        - /url: /home
+        - img [ref=e36]
+      - link "Planos" [ref=e39] [cursor=pointer]:
+        - /url: /workout-plans
+        - img [ref=e40]
+      - link "Coach AI" [ref=e42] [cursor=pointer]:
+        - /url: /ai/coach
+        - img [ref=e43]
+      - link "Evolução" [ref=e46] [cursor=pointer]:
+        - /url: /evolution
+        - img [ref=e47]
+      - link "Perfil" [ref=e48] [cursor=pointer]:
+        - /url: /profile
+        - img [ref=e49]
+  - button "Open Next.js Dev Tools" [ref=e57] [cursor=pointer]:
+    - img [ref=e58]
+  - alert [ref=e61]

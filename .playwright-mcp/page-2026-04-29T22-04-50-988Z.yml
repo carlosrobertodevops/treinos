@@ -1,0 +1,10 @@
+- generic [ref=e2]:
+  - img [ref=e5]
+  - generic [ref=e6]: Fit.ai
+  - generic [ref=e7]:
+    - generic [ref=e8]:
+      - heading "O app que vai transformar a forma como você treina." [level=1] [ref=e9]
+      - button "Fazer login com Google" [ref=e10]:
+        - img [ref=e11]
+        - text: Fazer login com Google
+    - paragraph [ref=e13]: ©2026 Copyright FIT.AI. Todos os direitos reservados

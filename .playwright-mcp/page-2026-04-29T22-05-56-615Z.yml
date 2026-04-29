@@ -1,0 +1,53 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - heading "FIT.AI" [level=1] [ref=e4]
+    - main [ref=e5]:
+      - generic [ref=e6]:
+        - img "Atleta" [ref=e8]
+        - generic [ref=e9]:
+          - heading "Atleta" [level=2] [ref=e10]
+          - paragraph [ref=e11]: Plano Básico
+      - generic [ref=e12]:
+        - generic [ref=e13]:
+          - img [ref=e15]
+          - generic [ref=e18]:
+            - generic [ref=e19]: "0.0"
+            - generic [ref=e20]: KG
+        - generic [ref=e21]:
+          - img [ref=e23]
+          - generic [ref=e29]:
+            - generic [ref=e30]: "0"
+            - generic [ref=e31]: CM
+        - generic [ref=e32]:
+          - img [ref=e34]
+          - generic [ref=e38]:
+            - generic [ref=e39]: 0%
+            - generic [ref=e40]: GC
+        - generic [ref=e41]:
+          - img [ref=e43]
+          - generic [ref=e46]:
+            - generic [ref=e47]: "0"
+            - generic [ref=e48]: ANOS
+      - button "Sair da conta" [ref=e49]:
+        - generic [ref=e50]: Sair da conta
+        - img [ref=e51]
+    - navigation [ref=e54]:
+      - link "Home" [ref=e55] [cursor=pointer]:
+        - /url: /home
+        - img [ref=e56]
+      - link "Planos" [ref=e59] [cursor=pointer]:
+        - /url: /workout-plans
+        - img [ref=e60]
+      - link "Coach AI" [ref=e62] [cursor=pointer]:
+        - /url: /ai/coach
+        - img [ref=e63]
+      - link "Evolução" [ref=e66] [cursor=pointer]:
+        - /url: /evolution
+        - img [ref=e67]
+      - link "Perfil" [ref=e68] [cursor=pointer]:
+        - /url: /profile
+        - img [ref=e69]
+  - button "Open Next.js Dev Tools" [ref=e77] [cursor=pointer]:
+    - img [ref=e78]
+  - alert [ref=e81]

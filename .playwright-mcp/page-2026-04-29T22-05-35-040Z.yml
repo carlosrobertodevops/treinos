@@ -1,0 +1,22 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e4]:
+        - img [ref=e6]
+        - generic [ref=e9]:
+          - paragraph [ref=e10]: Coach AI
+          - generic [ref=e13]: Online
+    - main [ref=e14]:
+      - generic [ref=e16]: Bem-vindo ao FIT.AI! 🎉
+      - generic [ref=e18]: O app que vai transformar a forma como você treina. Aqui você monta seu plano de treino personalizado, acompanha sua evolução com estatísticas detalhadas e conta com uma IA disponível 24h para te guiar em cada exercício.
+      - generic [ref=e20]: Tudo pensado para você alcançar seus objetivos de forma inteligente e consistente.
+      - generic [ref=e22]: Vamos configurar seu perfil?
+      - button "Começar!" [ref=e24]
+    - contentinfo [ref=e25]:
+      - generic [ref=e26]:
+        - textbox "Digite sua mensagem" [ref=e27]
+        - button [ref=e28]:
+          - img [ref=e29]
+  - button "Open Next.js Dev Tools" [ref=e36] [cursor=pointer]:
+    - img [ref=e37]
+  - alert [ref=e40]

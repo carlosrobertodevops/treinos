@@ -1,0 +1,28 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic:
+      - generic: FIT.AI
+    - generic [ref=e3]:
+      - banner [ref=e4]:
+        - generic [ref=e5]:
+          - img [ref=e7]
+          - generic [ref=e10]:
+            - paragraph [ref=e11]: Coach AI
+            - generic [ref=e14]: Online
+        - link "Fechar" [ref=e15] [cursor=pointer]:
+          - /url: /home
+          - img [ref=e16]
+      - generic [ref=e19]:
+        - generic [ref=e21]: Olá! Sou sua IA personal. Como posso ajudar com seu treino hoje?
+        - generic [ref=e23]: Olá!
+      - generic [ref=e24]:
+        - button "Alterar plano de treino" [ref=e25]
+        - button "Mudar objetivo" [ref=e26]
+        - button "Atualizar informações" [ref=e27]
+      - generic [ref=e29]:
+        - textbox "Digite sua mensagem" [ref=e30]
+        - button [ref=e31]:
+          - img [ref=e32]
+  - button "Open Next.js Dev Tools" [ref=e39] [cursor=pointer]:
+    - img [ref=e40]
+  - alert [ref=e43]
