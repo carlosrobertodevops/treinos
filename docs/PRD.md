@@ -23,6 +23,17 @@ Usuarios precisam organizar planos, dias, exercicios e sessoes de treino com est
 - Exibir dashboard/resumo na UI.
 - Validar entradas e respostas com Zod 4.
 
+## Telas (Figma `FIT.AI Alunos / Estudos`)
+
+- `/login`: hero foto + painel azul + Google CTA.
+- `/home`: greeting, semana de consistência, streak, treino de hoje.
+- `/ai/onboarding` (e `/ai` redireciona): chat Coach AI com bubbles de boas-vindas e botão `Começar!`.
+- `/ai/coach`: chat principal sobre fundo escuro com quick actions.
+- `/workout-plans`: hero do plano + cards por dia (rest e treino).
+- `/workout-plans/[planId]/days/[dayId]`: detalhe do dia com lista de exercícios.
+- `/profile`: avatar, métricas (KG, CM, GC, ANOS), sair da conta.
+- `/evolution`: streak hero (gradient laranja quando ativo), heatmap, stats e tempo total.
+
 ## Escopo Tecnico
 
 - UI com Next.js App Router.
@@ -46,6 +57,8 @@ Usuarios precisam organizar planos, dias, exercicios e sessoes de treino com est
 - API valida requests e responses com Zod 4.
 - Drizzle gera e aplica migrations no PostgreSQL.
 - Fluxo de iniciar sessao retorna identificador da sessao criada.
+- Telas Figma mapeadas (login, home, ai/onboarding, ai/coach, workout-plans, profile, evolution) renderizam usando tokens semânticos e ShadCN primitives.
+- `bun run test:e2e` executa smoke do design system em todas as telas mapeadas.
 
 ## Riscos
 

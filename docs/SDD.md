@@ -24,9 +24,13 @@ Browser
 
 ## Design System
 
-- ShadCN/UI como base de componentes.
-- Tailwind CSS com tokens semanticos.
+- ShadCN/UI como base de componentes; primitives instalados: `avatar`, `badge`, `button`, `card`, `dialog`, `input`, `scroll-area`, `separator`, `sheet`.
+- Tailwind CSS com tokens semanticos definidos em `src/app/globals.css` (`--primary: #2b54ff`, surfaces brancas, `--secondary/muted: #f1f1f1`, `--streak`/`--streak-soft` para sequência de treinos).
+- Tipografia Inter Tight via `next/font/google` em `src/app/layout.tsx`, exposta como `--font-sans`.
 - Componentes devem usar composicao completa quando existir (`CardHeader`, `CardContent`, `DialogTitle`, etc.).
+- Telas mapeadas para o Figma `FIT.AI Alunos / Estudos`. Cada rota possui contraparte direta no design (ver SPEC.md → "Telas Mapeadas").
+- `BottomNav` (`src/components/bottom-nav.tsx`) é a navegação fixa das telas autenticadas; recebe `active`.
+- Assets vindos do Figma ficam em `public/figma/<hash>.<ext>` e são referenciados como `/figma/<hash>.<ext>`.
 
 ## API Elysia
 
@@ -71,3 +75,4 @@ Browser
 - Zod 4 para fronteiras de dados.
 - Transacoes Drizzle quando regra alterar multiplas tabelas.
 - Docker Compose deve validar com `docker compose config`.
+- Playwright (`tests/e2e/`) cobre smoke de cada tela do design system. Rodar com `bun run test:e2e`.
