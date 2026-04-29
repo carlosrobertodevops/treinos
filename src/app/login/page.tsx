@@ -5,7 +5,7 @@ const Login = () => (
     <div className="absolute inset-0 z-0">
       <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent" />
       <img
-        src="http://localhost:3845/assets/773c1692f16475d0ed3ff30b0fa02d38f936e190.png"
+        src="/figma/773c1692f16475d0ed3ff30b0fa02d38f936e190.png"
         alt=""
         aria-hidden
         className="size-full object-cover opacity-90"

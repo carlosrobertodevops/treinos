@@ -69,7 +69,7 @@ const ProfilePage = async () => {
         <div className="flex w-full items-center justify-start gap-3">
           <Avatar className="size-[52px]">
             <AvatarImage
-              src="http://localhost:3845/assets/cf5a35513cfa4c97c008536c5d7ffacf7a4bfa49.png"
+              src="/figma/cf5a35513cfa4c97c008536c5d7ffacf7a4bfa49.png"
               alt={userName}
             />
             <AvatarFallback>{userName.slice(0, 2).toUpperCase()}</AvatarFallback>

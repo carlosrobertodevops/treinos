@@ -98,7 +98,7 @@ const WorkoutPlanDayPage = async ({ params }: PageProps) => {
             <img
               src={
                 day.coverImageUrl ||
-                'http://localhost:3845/assets/c44110f507b4b7a0e0cc715e08be6dc8c52aadf1.png'
+                '/figma/c44110f507b4b7a0e0cc715e08be6dc8c52aadf1.png'
               }
               alt=""
               aria-hidden

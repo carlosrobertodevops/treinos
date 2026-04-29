@@ -81,7 +81,7 @@ const WorkoutPlansPage = async () => {
         <div className="absolute inset-0 z-0 bg-zinc-900">
           <div className="absolute inset-0 z-10 bg-gradient-to-t from-black/90 to-transparent" />
           <img
-            src="http://localhost:3845/assets/8178ff0f02a6904d7f2933ba70a67051b3bf022a.png"
+            src="/figma/8178ff0f02a6904d7f2933ba70a67051b3bf022a.png"
             alt="Plano"
             className="size-full object-cover opacity-80"
           />
@@ -145,7 +145,7 @@ const WorkoutPlansPage = async () => {
                 <img
                   src={
                     day.coverImageUrl ||
-                    'http://localhost:3845/assets/c44110f507b4b7a0e0cc715e08be6dc8c52aadf1.png'
+                    '/figma/c44110f507b4b7a0e0cc715e08be6dc8c52aadf1.png'
                   }
                   alt={day.name}
                   className="size-full object-cover opacity-80 transition-transform duration-500 group-hover:scale-105"

@@ -68,7 +68,7 @@ const HomePage = async () => {
         <div className="absolute inset-0 z-0 bg-zinc-900">
           <div className="absolute inset-0 z-10 bg-gradient-to-t from-black/90 via-black/30 to-black/20" />
           <img
-            src="http://localhost:3845/assets/cc3d9c8a89701c8dc5253d27ac69aaff0c5ab281.png"
+            src="/figma/cc3d9c8a89701c8dc5253d27ac69aaff0c5ab281.png"
             alt=""
             aria-hidden
             className="size-full object-cover opacity-80"
@@ -187,7 +187,7 @@ const HomePage = async () => {
                   <img
                     src={
                       homeData.todayWorkoutDay.coverImageUrl ||
-                      'http://localhost:3845/assets/773c1692f16475d0ed3ff30b0fa02d38f936e190.png'
+                      '/figma/773c1692f16475d0ed3ff30b0fa02d38f936e190.png'
                     }
                     alt=""
                     aria-hidden
