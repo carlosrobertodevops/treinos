@@ -1,7 +1,7 @@
 # Graph Report - bootcamp-treinos-bun  (2026-04-29)
 
 ## Corpus Check
-- 132 files · ~500,617 words
+- 132 files · ~509,457 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -112,16 +112,16 @@
 10. `apiSuccess()` - 5 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `createServer()` --calls--> `PATCH()`  [INFERRED]
-  src/server/app.ts → docs/fullstack/claude-code-vs-the-world/codex-chat/src/app/api/configuracoes/route.ts
+- `PATCH()` --calls--> `createServer()`  [INFERRED]
+  docs/fullstack/claude-code-vs-the-world/codex-chat/src/app/api/configuracoes/route.ts → src/server/app.ts
 - `GET()` --calls--> `toCsv()`  [INFERRED]
   docs/fullstack/claude-code-vs-the-world/codex-chat/src/app/api/configuracoes/route.ts → docs/fullstack/claude-code-vs-the-world/codex-chat/src/lib/reports.ts
-- `addMovement()` --calls--> `GET()`  [INFERRED]
-  docs/fullstack/claude-code-vs-the-world/codex-chat/src/app/(dashboard)/inventario/page.tsx → docs/fullstack/claude-code-vs-the-world/codex-chat/src/app/api/configuracoes/route.ts
+- `GET()` --calls--> `addMovement()`  [INFERRED]
+  docs/fullstack/claude-code-vs-the-world/codex-chat/src/app/api/configuracoes/route.ts → docs/fullstack/claude-code-vs-the-world/codex-chat/src/app/(dashboard)/inventario/page.tsx
 - `GET()` --calls--> `createServer()`  [INFERRED]
   docs/fullstack/claude-code-vs-the-world/codex-chat/src/app/api/configuracoes/route.ts → src/server/app.ts
-- `createServer()` --calls--> `POST()`  [INFERRED]
-  src/server/app.ts → docs/fullstack/claude-code-vs-the-world/codex-chat/src/app/api/servicos/route.ts
+- `POST()` --calls--> `createServer()`  [INFERRED]
+  docs/fullstack/claude-code-vs-the-world/codex-chat/src/app/api/servicos/route.ts → src/server/app.ts
 
 ## Communities
 
