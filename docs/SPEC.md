@@ -51,12 +51,14 @@ DATABASE_URL_LOCAL=postgresql://postgres:postgres@localhost:5432/bootcamp_treino
 ## API Pattern
 
 ```ts
-export const workoutRoutes = new Elysia({ prefix: '/workout-plans' })
-  .post('/', async ({ body, set }) => {
+export const workoutRoutes = new Elysia({ prefix: '/workout-plans' }).post(
+  '/',
+  async ({ body, set }) => {
     const result = await createWorkoutPlan.execute(body)
     set.status = 201
     return result
-  })
+  },
+)
 ```
 
 ## Drizzle Pattern

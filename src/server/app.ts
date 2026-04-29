@@ -15,6 +15,8 @@ import {
   WorkoutDayParamsSchema,
   WorkoutPlanParamsSchema,
   WorkoutSessionParamsSchema,
+  HomeParamsSchema,
+  StatsQuerySchema,
 } from '../schemas'
 import { requireUserId } from './auth'
 import {
@@ -25,6 +27,9 @@ import {
   startWorkoutSession,
   updateWorkoutSession,
   upsertUserTrainData,
+  getWorkoutDayDetailed,
+  getHomeData,
+  getStats,
 } from './services/workout-service'
 import { parseSchema } from './validation'
 
@@ -128,6 +133,31 @@ export const createServer = () =>
           workoutDayId: parsedParams.workoutDayId,
           sessionId: parsedParams.sessionId,
           completedAt: parsedBody.completedAt,
+        })
+      },
+    )
+    .get('/home/:date', async ({ headers, params }) => {
+      const userId = requireUserId(headers)
+      const parsedParams = parseSchema(HomeParamsSchema, params)
+
+      return getHomeData({ userId, date: parsedParams.date })
+    })
+    .get('/stats', async ({ headers, query }) => {
+      const userId = requireUserId(headers)
+      const parsedQuery = parseSchema(StatsQuerySchema, query)
+
+      return getStats({ userId, from: parsedQuery.from, to: parsedQuery.to })
+    })
+    .get(
+      '/workout-plans/:workoutPlanId/days/:workoutDayId',
+      async ({ headers, params }) => {
+        const userId = requireUserId(headers)
+        const parsedParams = parseSchema(WorkoutDayParamsSchema, params)
+
+        return getWorkoutDayDetailed({
+          userId,
+          workoutPlanId: parsedParams.workoutPlanId,
+          workoutDayId: parsedParams.workoutDayId,
         })
       },
     )

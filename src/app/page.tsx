@@ -6,6 +6,7 @@ import {
   Card,
   CardContent,
   CardDescription,
+  CardFooter,
   CardHeader,
   CardTitle,
 } from '@/components/ui/card'
@@ -26,8 +27,8 @@ const Page = () => (
             Treinos com plano, sessao e progresso em fluxo unico.
           </h1>
           <p className="text-muted-foreground max-w-2xl text-lg leading-8">
-            Arquitetura atualizada para Next.js App Router, Bun, Elysia,
-            Drizzle ORM, PostgreSQL, Zod 4, Docker, ShadCN/UI e Tailwind CSS.
+            Arquitetura atualizada para Next.js App Router, Bun, Elysia, Drizzle
+            ORM, PostgreSQL, Zod 4, Docker, ShadCN/UI e Tailwind CSS.
           </p>
         </div>
         <div className="flex flex-col gap-3 sm:flex-row">
@@ -42,12 +43,16 @@ const Page = () => (
             <DumbbellIcon data-icon="inline-start" />
             Sessao do dia
           </CardTitle>
-          <CardDescription>Contrato UI pronto para consumir API.</CardDescription>
+          <CardDescription>
+            Contrato UI pronto para consumir API.
+          </CardDescription>
         </CardHeader>
         <CardContent className="flex flex-col gap-5">
           <div className="rounded-lg bg-secondary p-4">
             <p className="text-sm font-medium">Upper force</p>
-            <p className="text-muted-foreground text-sm">6 exercicios - 52 min</p>
+            <p className="text-muted-foreground text-sm">
+              6 exercicios - 52 min
+            </p>
           </div>
           <div className="grid grid-cols-2 gap-3">
             <div className="rounded-lg border p-3">

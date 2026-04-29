@@ -138,12 +138,8 @@
           "name": "workout_days_workout_plan_id_workout_plans_id_fk",
           "tableFrom": "workout_days",
           "tableTo": "workout_plans",
-          "columnsFrom": [
-            "workout_plan_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
+          "columnsFrom": ["workout_plan_id"],
+          "columnsTo": ["id"],
           "onDelete": "cascade",
           "onUpdate": "no action"
         }
@@ -222,12 +218,8 @@
           "name": "workout_exercises_workout_day_id_workout_days_id_fk",
           "tableFrom": "workout_exercises",
           "tableTo": "workout_days",
-          "columnsFrom": [
-            "workout_day_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
+          "columnsFrom": ["workout_day_id"],
+          "columnsTo": ["id"],
           "onDelete": "cascade",
           "onUpdate": "no action"
         }
@@ -342,12 +334,8 @@
           "name": "workout_sessions_workout_day_id_workout_days_id_fk",
           "tableFrom": "workout_sessions",
           "tableTo": "workout_days",
-          "columnsFrom": [
-            "workout_day_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
+          "columnsFrom": ["workout_day_id"],
+          "columnsTo": ["id"],
           "onDelete": "cascade",
           "onUpdate": "no action"
         }

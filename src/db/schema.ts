@@ -20,8 +20,12 @@ export const userTrainData = pgTable('user_train_data', {
   heightInCentimeters: integer('height_in_centimeters').notNull(),
   age: integer('age').notNull(),
   bodyFatPercentage: integer('body_fat_percentage').notNull(),
-  createdAt: timestamp('created_at', { withTimezone: true }).defaultNow().notNull(),
-  updatedAt: timestamp('updated_at', { withTimezone: true }).defaultNow().notNull(),
+  createdAt: timestamp('created_at', { withTimezone: true })
+    .defaultNow()
+    .notNull(),
+  updatedAt: timestamp('updated_at', { withTimezone: true })
+    .defaultNow()
+    .notNull(),
 })
 
 export const workoutPlans = pgTable('workout_plans', {
@@ -29,8 +33,12 @@ export const workoutPlans = pgTable('workout_plans', {
   userId: text('user_id').notNull(),
   name: text('name').notNull(),
   isActive: boolean('is_active').default(true).notNull(),
-  createdAt: timestamp('created_at', { withTimezone: true }).defaultNow().notNull(),
-  updatedAt: timestamp('updated_at', { withTimezone: true }).defaultNow().notNull(),
+  createdAt: timestamp('created_at', { withTimezone: true })
+    .defaultNow()
+    .notNull(),
+  updatedAt: timestamp('updated_at', { withTimezone: true })
+    .defaultNow()
+    .notNull(),
 })
 
 export const workoutDays = pgTable('workout_days', {
@@ -41,10 +49,16 @@ export const workoutDays = pgTable('workout_days', {
   name: text('name').notNull(),
   isRest: boolean('is_rest').default(false).notNull(),
   weekDay: weekDayEnum('week_day').notNull(),
-  estimatedDurationInSeconds: integer('estimated_duration_in_seconds').notNull(),
+  estimatedDurationInSeconds: integer(
+    'estimated_duration_in_seconds',
+  ).notNull(),
   coverImageUrl: text('cover_image_url'),
-  createdAt: timestamp('created_at', { withTimezone: true }).defaultNow().notNull(),
-  updatedAt: timestamp('updated_at', { withTimezone: true }).defaultNow().notNull(),
+  createdAt: timestamp('created_at', { withTimezone: true })
+    .defaultNow()
+    .notNull(),
+  updatedAt: timestamp('updated_at', { withTimezone: true })
+    .defaultNow()
+    .notNull(),
 })
 
 export const workoutExercises = pgTable('workout_exercises', {
@@ -57,8 +71,12 @@ export const workoutExercises = pgTable('workout_exercises', {
   sets: integer('sets').notNull(),
   reps: integer('reps').notNull(),
   restTimeInSeconds: integer('rest_time_in_seconds').notNull(),
-  createdAt: timestamp('created_at', { withTimezone: true }).defaultNow().notNull(),
-  updatedAt: timestamp('updated_at', { withTimezone: true }).defaultNow().notNull(),
+  createdAt: timestamp('created_at', { withTimezone: true })
+    .defaultNow()
+    .notNull(),
+  updatedAt: timestamp('updated_at', { withTimezone: true })
+    .defaultNow()
+    .notNull(),
 })
 
 export const workoutSessions = pgTable('workout_sessions', {
@@ -66,10 +84,16 @@ export const workoutSessions = pgTable('workout_sessions', {
   workoutDayId: uuid('workout_day_id')
     .notNull()
     .references(() => workoutDays.id, { onDelete: 'cascade' }),
-  startedAt: timestamp('started_at', { withTimezone: true }).defaultNow().notNull(),
+  startedAt: timestamp('started_at', { withTimezone: true })
+    .defaultNow()
+    .notNull(),
   completedAt: timestamp('completed_at', { withTimezone: true }),
-  createdAt: timestamp('created_at', { withTimezone: true }).defaultNow().notNull(),
-  updatedAt: timestamp('updated_at', { withTimezone: true }).defaultNow().notNull(),
+  createdAt: timestamp('created_at', { withTimezone: true })
+    .defaultNow()
+    .notNull(),
+  updatedAt: timestamp('updated_at', { withTimezone: true })
+    .defaultNow()
+    .notNull(),
 })
 
 export const workoutPlansRelations = relations(workoutPlans, ({ many }) => ({
@@ -85,16 +109,22 @@ export const workoutDaysRelations = relations(workoutDays, ({ one, many }) => ({
   sessions: many(workoutSessions),
 }))
 
-export const workoutExercisesRelations = relations(workoutExercises, ({ one }) => ({
-  workoutDay: one(workoutDays, {
-    fields: [workoutExercises.workoutDayId],
-    references: [workoutDays.id],
+export const workoutExercisesRelations = relations(
+  workoutExercises,
+  ({ one }) => ({
+    workoutDay: one(workoutDays, {
+      fields: [workoutExercises.workoutDayId],
+      references: [workoutDays.id],
+    }),
   }),
-}))
+)
 
-export const workoutSessionsRelations = relations(workoutSessions, ({ one }) => ({
-  workoutDay: one(workoutDays, {
-    fields: [workoutSessions.workoutDayId],
-    references: [workoutDays.id],
+export const workoutSessionsRelations = relations(
+  workoutSessions,
+  ({ one }) => ({
+    workoutDay: one(workoutDays, {
+      fields: [workoutSessions.workoutDayId],
+      references: [workoutDays.id],
+    }),
   }),
-}))
+)

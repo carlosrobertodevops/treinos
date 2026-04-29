@@ -1,11 +1,18 @@
 import type { Metadata } from 'next'
 import type { ReactNode } from 'react'
+import { Inter_Tight } from 'next/font/google'
 
 import './globals.css'
 
+const interTight = Inter_Tight({
+  subsets: ['latin'],
+  variable: '--font-inter-tight',
+  display: 'swap',
+})
+
 export const metadata: Metadata = {
-  title: 'Bootcamp Treinos',
-  description: 'Gestao e execucao de treinos com Next.js, Elysia e Drizzle.',
+  title: 'FIT.AI',
+  description: 'O app que vai transformar a forma como voce treina.',
 }
 
 interface RootLayoutProps {
@@ -13,7 +20,7 @@ interface RootLayoutProps {
 }
 
 const RootLayout = ({ children }: RootLayoutProps) => (
-  <html lang="pt-BR">
+  <html lang="pt-BR" className={interTight.variable}>
     <body>{children}</body>
   </html>
 )

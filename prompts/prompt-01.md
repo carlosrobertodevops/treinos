@@ -1,0 +1,17 @@
+# Figma mcp
+
+Analise o código nosso projeto em `./src` e veja as UI estam conforme minha seleção do Figma abaixo (logi, AI e etc).
+Caso não esteja, adapte todo o codigo para usar o padrão do Figma abaixo para cada tela da UI, usando (get_design_context, generate_figma_design e etc).
+Sempre uusando componentes ShdCN/UI em `src/components/ui` e estilize com Tailwind.
+
+- Login: `https://www.figma.com/design/ljuq4iRj8Oa3OU9g47e1Ht/FIT.AI--Alunos---Estudos?node-id=3606-1276&m=dev`
+- AI: `https://www.figma.com/design/ljuq4iRj8Oa3OU9g47e1Ht/FIT.AI--Alunos---Estudos?node-id=3606-1053&m=dev`
+- AI Onbording: `https://www.figma.com/design/ljuq4iRj8Oa3OU9g47e1Ht/FIT.AI--Alunos---Estudos?node-id=3606-1053&m=dev`
+- AI Coach: `https://www.figma.com/design/ljuq4iRj8Oa3OU9g47e1Ht/FIT.AI--Alunos---Estudos?node-id=3606-936&m=dev`
+- Plano de Treino: `https://www.figma.com/design/ljuq4iRj8Oa3OU9g47e1Ht/FIT.AI--Alunos---Estudos?node-id=3606-808&m=dev`
+- Home: `https://www.figma.com/design/ljuq4iRj8Oa3OU9g47e1Ht/FIT.AI--Alunos---Estudos?node-id=3606-679&m=dev`
+- Perfil: `https://www.figma.com/design/ljuq4iRj8Oa3OU9g47e1Ht/FIT.AI--Alunos---Estudos?node-id=3606-608&m=dev`
+- Eveolução: `https://www.figma.com/design/ljuq4iRj8Oa3OU9g47e1Ht/FIT.AI--Alunos---Estudos?node-id=3606-410&m=dev`
+- Evolução: `https://www.figma.com/design/ljuq4iRj8Oa3OU9g47e1Ht/FIT.AI--Alunos---Estudos?node-id=3606-212&m=dev`
+- Plano de Treino: `https://www.figma.com/design/ljuq4iRj8Oa3OU9g47e1Ht/FIT.AI--Alunos---Estudos?node-id=3606-79&m=dev`
+- Home: `https://www.figma.com/design/ljuq4iRj8Oa3OU9g47e1Ht/FIT.AI--Alunos---Estudos?node-id=3606-2&m=dev`

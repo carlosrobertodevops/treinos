@@ -1,1 +1,13 @@
-{"nodes": [{"id": "users_carlosroberto_workspace_projetos_fullstack_fsc_bootcamp_treinos_bootcamp_treinos_bun_src_generated_prisma_models_ts", "label": "models.ts", "file_type": "code", "source_file": "/Users/carlosroberto/Workspace/Projetos/fullstack/fsc/bootcamp/treinos/bootcamp-treinos-bun/src/generated/prisma/models.ts", "source_location": "L1"}], "edges": [], "raw_calls": []}
+{
+  "nodes": [
+    {
+      "id": "users_carlosroberto_workspace_projetos_fullstack_fsc_bootcamp_treinos_bootcamp_treinos_bun_src_generated_prisma_models_ts",
+      "label": "models.ts",
+      "file_type": "code",
+      "source_file": "/Users/carlosroberto/Workspace/Projetos/fullstack/fsc/bootcamp/treinos/bootcamp-treinos-bun/src/generated/prisma/models.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [],
+  "raw_calls": []
+}

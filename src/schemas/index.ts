@@ -80,6 +80,15 @@ export const WorkoutSessionParamsSchema = WorkoutDayParamsSchema.extend({
   sessionId: z.uuid(),
 })
 
+export const HomeParamsSchema = z.object({
+  date: z.string().date(),
+})
+
+export const StatsQuerySchema = z.object({
+  from: z.string().date(),
+  to: z.string().date(),
+})
+
 export type CreateWorkoutPlanBody = z.infer<typeof CreateWorkoutPlanBodySchema>
 export type ListWorkoutPlansQuery = z.infer<typeof ListWorkoutPlansQuerySchema>
 export type UpsertUserTrainDataBody = z.infer<
